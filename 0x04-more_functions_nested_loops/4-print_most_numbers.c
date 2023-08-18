@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * print_numbers - print 0 - 9
- *		exept 2 and 4
+ * print_numbers - print 0 - 9 apart
+ *		from 2 and 4 and you can
  *              only using _putchar twice
- *
  * Return: Always 0 (success)
 */
 
