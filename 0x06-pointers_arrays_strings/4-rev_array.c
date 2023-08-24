@@ -8,7 +8,7 @@
  * Return: nothing
 */
 
-char reverse_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i, j, t;
 
