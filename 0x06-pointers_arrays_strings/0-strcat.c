@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * *_strcat - function that concentenate
@@ -15,7 +15,7 @@ char *_strcat(char *dest, char *src)
 	int c, c2;
 
 	c = 0;
-	/* ana khaled seleem*/
+
 	while (dest[c])
 		c++;
 
