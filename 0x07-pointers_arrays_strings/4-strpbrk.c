@@ -7,7 +7,7 @@
  * Rrturn: pointer to the byte
 */
 
-char *_strpbrk(char *s, char accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
 	char *p;
