@@ -2,9 +2,8 @@
 
 /**
  * print_chessboard - print chessboard as the game
- *
  * @a: the rows
- * Return: nothing
+ * Return: always  0 (success)
 */
 
 void print_chessboard(char (*a)[8])
