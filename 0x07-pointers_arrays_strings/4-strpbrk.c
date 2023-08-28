@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * *_strpbrk - searching about string
+ * *_strpbrk - searching about string for any of set of bytes
  * @s: string
  * @accept: string to match
- * Rrturn: pointer to the byte
+ * Return: pointer to the byte
 */
 
 char *_strpbrk(char *s, char *accept)
