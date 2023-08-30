@@ -1,6 +1,10 @@
 #include "main.h"
 
-/***/
+/**
+ * _puts_recursion - pointer to stg, followed by new line
+ * @s: pointer to stg
+ * Return: void
+*/
 
 void _puts_recursion(char *s)
 {
