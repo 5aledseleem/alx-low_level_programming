@@ -1,39 +1,44 @@
 #include <stdio.h>
-#include <stdlip.h>
+#include <stdlib.h>
+#include "main.h"
+
 /**
- * main - prints the minmum num of coins
- * to make change for an amount of money.
- * @argc: num of commandline args.
- * @argv: pointer to an arr of commandline of args.
- * Return: 0 if success, non-zero if fall
+ * main - prints the minimum number of coins to
+ * make change for an amount of money
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: 0 (Success), 1 (Error)
 */
 
 int main(int argc, char *argv[])
 {
-	if (argc == 2)
-	{
-		int i, lc = 0, mon = atoi(argv[1]);
-		int c[] = {25, 10, 5, 2, 1};
+	int num, j, result;
+	int coins[] = {25, 10, 5, 2, 1};
 
-		for (i = 0; i < 5; i++)
-		{
-			if (mon >= c[i])
-			{
-				lc += mon / c[i];
-				mon = mon % c[i];
-				if (mon % c[i] == 0)
-				{
-					break;
-				}
-			}
-		}
-		printf("%d\n", lc);
-	}
-	else
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	num = atoi(argv[1]);
+	result = 0;
+	if (num < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+
+	for (j = 0; j < 5 && num >= 0; j++)
+	{
+		while (num >= coins[j])
+		{
+			result++;
+			num -= coins[j];
+		}
+	}
+
+	printf("%d\n", result);
 	return (0);
 }
 
