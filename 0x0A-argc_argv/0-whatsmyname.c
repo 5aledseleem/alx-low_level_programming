@@ -3,7 +3,7 @@
 /**
  * main - prints prorgram name, followed by new line
  * @argv: integer
- * @argv: lst
+ * @argc: lst
  * Return: 0
 */
 
