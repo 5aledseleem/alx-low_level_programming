@@ -1,7 +1,7 @@
  #include "lists.h"
 
 /**
- * print_lists - prints alinked lists
+ * print_listint - prints alinked lists
  * @h: pointer of 1st node
  *
  * Return: size of lists
