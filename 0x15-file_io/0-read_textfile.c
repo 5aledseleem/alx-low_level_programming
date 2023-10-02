@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * read_textfile- Read text file print
+ * read_textfile - Read text file print
  * @filename: tet file
  * @letters: int
  * Return: w- act num of bytes read and printed
@@ -10,7 +10,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *buffer;
+	char *bufferr;
 	ssize_t fdy;
 	ssize_t ww;
 	ssize_t tt;
@@ -18,11 +18,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fdy = open(filename, O_RDONLY);
 	if (fdy == -1)
 		return (0);
-	buffer = malloc(sizeof(char) * letters);
-	t = read(fdy, buffer, letters);
-	w = write(STDOUT_FILENO, buffer, tt);
+	bufferr = malloc(sizeof(char) * letters);
+	tt = read(fdy, bufferr, letters);
+	ww = write(STDOUT_FILENO, bufferr, tt);
 
-	free(buffer);
+	free(bufferr);
 	close(fdy);
 	return (ww);
 }
